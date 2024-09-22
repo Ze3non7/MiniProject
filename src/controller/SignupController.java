@@ -10,6 +10,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 
@@ -19,6 +20,7 @@ import java.util.Objects;
 
 public class SignupController {
 
+    public AnchorPane pane;
     public TextField txtName;
     public PasswordField txtPassword;
     public PasswordField txtConfirmPassword;
@@ -139,10 +141,23 @@ public class SignupController {
                     Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Success");
                     alert.setTitle("Success");
                     alert.showAndWait();
+
+                    Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/login.fxml")));
+
+                    scene = new Scene(root);
+
+                    Stage primaryStage = (Stage) pane.getScene().getWindow();
+                    primaryStage.setTitle("Login");
+                    primaryStage.setScene(scene);
+                    primaryStage.show();
+                    primaryStage.centerOnScreen();
+
                 }
             }
             catch (SQLException e) {
                 e.printStackTrace();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
         }
         else
