@@ -17,5 +17,15 @@
         <jarDirectory url="file://$USER_HOME$/Downloads/JAVA/javafx-sdk-23/lib" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="java" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/lib/mysql-connector-j-9.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
