@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupController">
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupController">
     <children>
         <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="sidebar" stylesheets="@../resources/style.css">
             <children>
@@ -84,6 +84,11 @@
                     </padding>
                 </PasswordField>
                 <Label fx:id="lbpassword1" layoutX="30.0" layoutY="347.0" text="Password does not match" textFill="RED" />
+            <Label fx:id="lblAutoID" layoutX="279.0" layoutY="68.0" text="AutoID" textFill="#6747cd">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
             </children>
         </Pane>
     </children>

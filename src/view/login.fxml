@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="parent" stylesheets="@../resources/style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="parent" stylesheets="@../resources/style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
     <children>
         <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="sidebar" stylesheets="@../resources/style.css">
             <children>
@@ -55,7 +55,7 @@
                 </Label>
                 <TextField fx:id="tf_email" layoutX="29.0" layoutY="256.0" prefHeight="25.0" prefWidth="310.0" promptText="Email" />
                 <PasswordField fx:id="tf_password" layoutX="29.0" layoutY="306.0" prefHeight="25.0" prefWidth="310.0" promptText="Password" />
-                <Button fx:id="button_login" layoutX="28.0" layoutY="380.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="310.0" styleClass="loginBtn" stylesheets="@../resources/style.css" text="Login" textFill="WHITE">
+                <Button layoutX="28.0" layoutY="380.0" mnemonicParsing="false" onAction="#button_login" prefHeight="50.0" prefWidth="310.0" styleClass="loginBtn" stylesheets="@../resources/style.css" text="Login" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font>
