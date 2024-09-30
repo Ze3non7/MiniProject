@@ -40,6 +40,8 @@ public class LoginController {
         stage.setScene(scene);
         stage.setTitle("Register");
         stage.show();
+
+
     }
 
     public void button_login(ActionEvent event) throws IOException
