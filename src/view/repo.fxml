@@ -3,53 +3,57 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RepoController">
    <children>
-      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="sidebar" stylesheets="@../resources/style.css" />
-      <Label layoutX="433.0" layoutY="34.0" prefHeight="26.0" prefWidth="115.0" text="Aadhaar Card">
+      <Label layoutX="45.0" layoutY="107.0" prefHeight="26.0" prefWidth="115.0" text="Aadhaar Card">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Label layoutX="432.0" layoutY="236.0" text="Birth Certificate">
+      <Label layoutX="580.0" layoutY="107.0" text="Birth Certificate">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Label layoutX="432.0" layoutY="426.0" minHeight="-Infinity" minWidth="-Infinity" text="10th Marksheet">
+      <Label layoutX="324.0" layoutY="287.0" minHeight="-Infinity" minWidth="-Infinity" text="10th Marksheet">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Label layoutX="631.0" layoutY="35.0" text="Pan Card">
+      <Label layoutX="324.0" layoutY="107.0" text="Pan Card">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Label layoutX="620.0" layoutY="234.0" prefHeight="26.0" prefWidth="133.0" text="12th Marksheet">
+      <Label layoutX="45.0" layoutY="287.0" prefHeight="26.0" prefWidth="133.0" text="12th Marksheet">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Label layoutX="616.0" layoutY="427.0" text="Bonafide Certificate">
+      <Label layoutX="594.0" layoutY="287.0" text="Bonafide Certificate">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Button layoutX="464.0" layoutY="82.0" mnemonicParsing="false" text="Choose file" />
-      <Button layoutX="464.0" layoutY="141.0" mnemonicParsing="false" text="View File" />
-      <Button layoutX="641.0" layoutY="81.0" mnemonicParsing="false" text="Choose file" />
-      <Button layoutX="642.0" layoutY="139.0" mnemonicParsing="false" text="View File" />
-      <Button layoutX="464.0" layoutY="287.0" mnemonicParsing="false" text="Choose file" />
-      <Button layoutX="464.0" layoutY="344.0" mnemonicParsing="false" text="View File" />
-      <Button layoutX="638.0" layoutY="286.0" mnemonicParsing="false" text="Choose file" />
-      <Button layoutX="639.0" layoutY="346.0" mnemonicParsing="false" text="View File" />
-      <Button layoutX="463.0" layoutY="471.0" mnemonicParsing="false" text="Choose file" />
-      <Button layoutX="465.0" layoutY="521.0" mnemonicParsing="false" text="View File" />
-      <Button layoutX="638.0" layoutY="471.0" mnemonicParsing="false" text="Choose file" />
-      <Button layoutX="638.0" layoutY="521.0" mnemonicParsing="false" text="View File" />
+      <Button layoutX="45.0" layoutY="152.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" onAction="#chooseAadhar" prefHeight="30.0" prefWidth="200.0" text="Upload Aadhaar Card" />
+      <Button layoutX="45.0" layoutY="195.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="View Aadhaar Card" />
+      <Button layoutX="324.0" layoutY="152.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" onAction="#choosePAN" prefHeight="30.0" prefWidth="200.0" text="Upload Pan Card" />
+      <Button layoutX="324.0" layoutY="195.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="View Pan Card" />
+      <Button layoutX="576.0" layoutY="152.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" onAction="#chooseBirthCertificate" prefHeight="30.0" prefWidth="200.0" text="Upload Birth Certificate" />
+      <Button layoutX="576.0" layoutY="195.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="View Birth Certificate" />
+      <Button layoutX="45.0" layoutY="333.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" onAction="#chooseMarksheet12" prefHeight="30.0" prefWidth="200.0" text="Upload 12th Marksheet" />
+      <Button layoutX="45.0" layoutY="383.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="View 12th Marksheet" />
+      <Button layoutX="324.0" layoutY="333.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" onAction="#chooseMarksheet10" prefHeight="30.0" prefWidth="200.0" text="Upload 10th Marksheet" />
+      <Button layoutX="324.0" layoutY="383.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="View 10th Marksheet" />
+      <Button layoutX="576.0" layoutY="333.0" maxHeight="50.0" maxWidth="200.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#chooseBonafide" prefHeight="30.0" prefWidth="200.0" text="Upload Bonafide Certificate" />
+      <Button layoutX="576.0" layoutY="383.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="View Bonafide Certificate" />
+      <Button layoutX="25.0" layoutY="23.0" mnemonicParsing="false" onAction="#switchToDashboard" text="Back" />
+      <Label fx:id="prnid" layoutX="369.0" layoutY="27.0" text="Label">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

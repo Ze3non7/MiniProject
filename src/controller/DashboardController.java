@@ -12,9 +12,23 @@ import java.util.Objects;
 
 public class DashboardController {
 
+    private String loggedInPrn;
+
+    // Method to receive prn from LoginController
+    public void setLoggedInPrn(String prn) {
+        this.loggedInPrn = prn;
+    }
+
     public void switchToRepo(ActionEvent event) throws IOException
     {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/repo.fxml")));
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/repo.fxml"));
+        Parent root = loader.load();
+
+        // Pass the prn to the RepoController
+        RepoController repoController = loader.getController();
+        repoController.setLoggedInPrn(loggedInPrn);
+
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setTitle("Repository");
