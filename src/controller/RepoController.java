@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -65,6 +66,9 @@ public class RepoController {
 
                 int rowsAffected = preparedStatement.executeUpdate();
                 if (rowsAffected > 0) {
+                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Upload Successful");
+                    alert.setTitle("Success");
+                    alert.showAndWait();
                     System.out.println(documentColumn + " uploaded successfully.");
                 }
             } catch (SQLException | IOException e) {
@@ -98,7 +102,82 @@ public class RepoController {
     }
 
 
+    // Method to view the image based on document type
+    public void viewDocument(String documentColumn) {
+        try {
+            // Fetch image from database based on document type
+            Connection connection = DBConnection.getInstance().getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT " + documentColumn + " FROM users WHERE prn = ?");
+            preparedStatement.setString(1, loggedInPrn);
 
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()) {
+                byte[] imageBytes = resultSet.getBytes(documentColumn);
+
+                if (imageBytes != null) {
+                    // Display the image in a new window
+                    showImageInNewWindow(imageBytes);
+                } else {
+                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "No image found");
+                    alert.setTitle("Error");
+                    alert.showAndWait();
+                    System.out.println("No image found for " + documentColumn);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // Method to show the image in a new window
+    private void showImageInNewWindow(byte[] imageBytes) {
+        try {
+            // Convert byte array to Image
+            Image image = new Image(new ByteArrayInputStream(imageBytes));
+
+            // Load the popup.fxml layout
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/popup.fxml"));
+            Parent root = loader.load();
+
+            // Get the controller for popup.fxml and set the image
+            PopUpController popUpController = loader.getController();
+            popUpController.setImage(image);
+
+            // Show the image in a new window
+            Stage stage = new Stage();
+            stage.setTitle("View Document");
+            stage.setScene(new Scene(root));
+            stage.show();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    // Methods for each document button
+    public void viewAadharCard() {
+        viewDocument("aadhar_card");
+    }
+
+    public void viewPANCard() {
+        viewDocument("pancard");
+    }
+
+    public void viewBirthCertificate() {
+        viewDocument("birth");
+    }
+
+    public void viewMarksheet12() {
+        viewDocument("marksheet12");
+    }
+
+    public void viewMarksheet10() {
+        viewDocument("marksheet10");
+    }
+
+    public void viewBonafide() {
+        viewDocument("bonafide");
+    }
 
 
 }

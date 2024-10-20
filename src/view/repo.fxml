@@ -3,10 +3,16 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RepoController">
    <children>
+      <Pane prefHeight="80.0" prefWidth="800.0" style="-fx-background-color: #6747CD;">
+         <children>
+            <Button layoutX="8.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToDashboard" styleClass="button-repo_underline" stylesheets="@../resources/style.css" text="Back" />
+         </children>
+      </Pane>
       <Label layoutX="45.0" layoutY="107.0" prefHeight="26.0" prefWidth="115.0" text="Aadhaar Card">
          <font>
             <Font size="17.0" />
@@ -37,22 +43,21 @@
             <Font size="17.0" />
          </font>
       </Label>
-      <Button layoutX="45.0" layoutY="152.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" onAction="#chooseAadhar" prefHeight="30.0" prefWidth="200.0" text="Upload Aadhaar Card" />
-      <Button layoutX="45.0" layoutY="195.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="View Aadhaar Card" />
-      <Button layoutX="324.0" layoutY="152.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" onAction="#choosePAN" prefHeight="30.0" prefWidth="200.0" text="Upload Pan Card" />
-      <Button layoutX="324.0" layoutY="195.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="View Pan Card" />
-      <Button layoutX="576.0" layoutY="152.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" onAction="#chooseBirthCertificate" prefHeight="30.0" prefWidth="200.0" text="Upload Birth Certificate" />
-      <Button layoutX="576.0" layoutY="195.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="View Birth Certificate" />
-      <Button layoutX="45.0" layoutY="333.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" onAction="#chooseMarksheet12" prefHeight="30.0" prefWidth="200.0" text="Upload 12th Marksheet" />
-      <Button layoutX="45.0" layoutY="383.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="View 12th Marksheet" />
-      <Button layoutX="324.0" layoutY="333.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" onAction="#chooseMarksheet10" prefHeight="30.0" prefWidth="200.0" text="Upload 10th Marksheet" />
-      <Button layoutX="324.0" layoutY="383.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="View 10th Marksheet" />
-      <Button layoutX="576.0" layoutY="333.0" maxHeight="50.0" maxWidth="200.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#chooseBonafide" prefHeight="30.0" prefWidth="200.0" text="Upload Bonafide Certificate" />
-      <Button layoutX="576.0" layoutY="383.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="View Bonafide Certificate" />
-      <Button layoutX="25.0" layoutY="23.0" mnemonicParsing="false" onAction="#switchToDashboard" text="Back" />
-      <Label fx:id="prnid" layoutX="369.0" layoutY="27.0" text="Label">
+      <Button layoutX="35.0" layoutY="152.0" maxHeight="50.0" maxWidth="224.0" mnemonicParsing="false" onAction="#chooseAadhar" prefHeight="42.0" prefWidth="224.0" stylesheets="@../resources/style.css" text="Upload Aadhaar Card" />
+      <Button layoutX="35.0" layoutY="203.0" maxHeight="50.0" maxWidth="224.0" mnemonicParsing="false" onAction="#viewAadharCard" prefHeight="42.0" prefWidth="224.0" stylesheets="@../resources/style.css" text="View Aadhaar Card" />
+      <Button layoutX="294.0" layoutY="152.0" maxHeight="50.0" maxWidth="224.0" mnemonicParsing="false" onAction="#choosePAN" prefHeight="42.0" prefWidth="224.0" stylesheets="@../resources/style.css" text="Upload Pan Card" />
+      <Button layoutX="294.0" layoutY="203.0" maxHeight="50.0" maxWidth="224.0" mnemonicParsing="false" onAction="#viewPANCard" prefHeight="42.0" prefWidth="224.0" stylesheets="@../resources/style.css" text="View Pan Card" />
+      <Button layoutX="556.0" layoutY="152.0" maxHeight="50.0" maxWidth="224.0" mnemonicParsing="false" onAction="#chooseBirthCertificate" prefHeight="42.0" prefWidth="224.0" stylesheets="@../resources/style.css" text="Upload Birth Certificate" />
+      <Button layoutX="556.0" layoutY="203.0" maxHeight="50.0" maxWidth="224.0" mnemonicParsing="false" onAction="#viewBirthCertificate" prefHeight="42.0" prefWidth="224.0" stylesheets="@../resources/style.css" text="View Birth Certificate" />
+      <Button layoutX="45.0" layoutY="330.0" maxHeight="50.0" maxWidth="224.0" mnemonicParsing="false" onAction="#chooseMarksheet12" prefHeight="42.0" prefWidth="224.0" stylesheets="@../resources/style.css" text="Upload 12th Marksheet" />
+      <Button layoutX="45.0" layoutY="383.0" maxHeight="50.0" maxWidth="224.0" mnemonicParsing="false" onAction="#viewMarksheet12" prefHeight="42.0" prefWidth="224.0" stylesheets="@../resources/style.css" text="View 12th Marksheet" />
+      <Button layoutX="300.0" layoutY="330.0" maxHeight="50.0" maxWidth="224.0" mnemonicParsing="false" onAction="#chooseMarksheet10" prefHeight="42.0" prefWidth="224.0" stylesheets="@../resources/style.css" text="Upload 10th Marksheet" />
+      <Button layoutX="300.0" layoutY="383.0" maxHeight="50.0" maxWidth="224.0" mnemonicParsing="false" onAction="#viewMarksheet10" prefHeight="42.0" prefWidth="224.0" stylesheets="@../resources/style.css" text="View 10th Marksheet" />
+      <Button layoutX="556.0" layoutY="330.0" maxHeight="50.0" maxWidth="224.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#chooseBonafide" prefHeight="42.0" prefWidth="224.0" stylesheets="@../resources/style.css" text="Upload Bonafide Certificate" />
+      <Button layoutX="556.0" layoutY="383.0" maxHeight="50.0" maxWidth="224.0" mnemonicParsing="false" onAction="#viewBonafide" prefHeight="42.0" prefWidth="224.0" stylesheets="@../resources/style.css" text="View Bonafide Certificate" />
+      <Label fx:id="prnid" layoutX="358.0" layoutY="23.0" text="Label">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold" size="20.0" />
          </font>
       </Label>
    </children>

@@ -62,10 +62,10 @@
                 </Button>
                 <Label layoutX="104.0" layoutY="473.0" text="New User?" textFill="#a3a3a3">
                     <font>
-                        <Font size="14.0" />
+                        <Font size="16.0" />
                     </font>
                 </Label>
-                <Button fx:id="button_sign_up" layoutX="170.0" layoutY="468.0" mnemonicParsing="false" onAction="#switchToSignup" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Register" textFill="#6747cd" underline="true">
+                <Button fx:id="button_sign_up" layoutX="191.0" layoutY="463.0" mnemonicParsing="false" onAction="#switchToSignup" style="-fx-background-color: transparent; -fx-cursor: hand;" styleClass="button-underline" stylesheets="@../resources/style.css" text="Register" textFill="#004fd7" underline="true">
                     <font>
                         <Font size="14.0" />
                     </font>
