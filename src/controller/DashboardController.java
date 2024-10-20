@@ -37,10 +37,9 @@ public class DashboardController {
         stage.show();
     }
     public void careerConnect(ActionEvent event) throws IOException {
-        @FXML
-        private Stage stage;
-        private Scene scene;
-        private Parent root;
+
+        Stage stage;
+        Scene scene;
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/career1.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
