@@ -8,7 +8,7 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
    <children>
-      <Button layoutX="456.0" layoutY="405.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="275.0" styleClass="loginBtn" stylesheets="@../resources/style.css" text="Career Suggestor">
+      <Button layoutX="456.0" layoutY="405.0" mnemonicParsing="false" onAction="#careerConnect" prefHeight="66.0" prefWidth="275.0" styleClass="loginBtn" stylesheets="@../resources/style.css" text="Career Suggestor">
          <font>
             <Font size="30.0" />
          </font></Button>
