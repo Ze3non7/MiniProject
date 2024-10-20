@@ -21,7 +21,7 @@
             </Label>
          </children>
       </VBox>
-      <Button layoutX="456.0" layoutY="116.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="275.0" styleClass="loginBtn" stylesheets="@../resources/style.css" text="Repository">
+      <Button layoutX="456.0" layoutY="116.0" mnemonicParsing="false" onAction="#switchToRepo" prefHeight="66.0" prefWidth="275.0" styleClass="loginBtn" stylesheets="@../resources/style.css" text="Repository">
          <font>
             <Font size="30.0" />
          </font>
