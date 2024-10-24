@@ -63,7 +63,7 @@ public class LoginController {
                 String prn = resultSet.getString("prn");
 
                 // Load the dashboard.fxml and pass the prn to the DashboardController
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/dashboard.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/dashboard.fxml"));
                 Parent root = loader.load();
 
                 // Get the controller for the dashboard

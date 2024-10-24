@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="root" stylesheets="@../resources/style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FinalCareerController">
+   <children>
+      <Label fx:id="recommendationLabel" layoutX="31.0" layoutY="43.0" prefHeight="326.0" prefWidth="751.0" text="Based on your academic performance in each subject throughout the years, we recommend pursuing a career in" textOverrun="LEADING_WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="Gill Sans MT" size="40.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5804417005472754" endY="0.16403787895708055" startX="0.13880123776216235" startY="0.6813880487195325">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10266666859388351" blue="0.2199999988079071" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.10266666859388351" blue="0.2199999988079071" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.43847874720357966">
+                     <color>
+                        <Color red="0.4338964819908142" green="0.29930150508880615" blue="0.5877193212509155" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9463087248322147">
+                     <color>
+                        <Color red="0.19736842811107635" blue="0.4385964870452881" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9938751568723743">
+                     <color>
+                        <Color red="0.20921052992343903" blue="0.4649122953414917" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3907172679901123" green="0.27360841631889343" blue="0.5438596606254578" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="236.0" layoutY="505.0" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="67.0" prefWidth="317.0" styleClass="returner" stylesheets="@../resources/style.css" text="Back to Dashboard">
+         <font>
+            <Font name="Century Gothic" size="28.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.24605680640187544" endY="1.0" startX="0.2460567552584578" startY="0.4069400901674097">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10266666859388351" blue="0.2199999988079071" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.592505931854248" green="0.46621182560920715" blue="0.7368420958518982" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.43847874720357966">
+                     <color>
+                        <Color red="0.4338964819908142" green="0.29930150508880615" blue="0.5877193212509155" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9463087248322147">
+                     <color>
+                        <Color red="0.8737491965293884" green="0.7954299449920654" blue="0.9912280440330505" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9938751568723743">
+                     <color>
+                        <Color red="0.20921052992343903" blue="0.4649122953414917" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3907172679901123" green="0.27360841631889343" blue="0.5438596606254578" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>

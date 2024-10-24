@@ -23,7 +23,7 @@ public class DashboardController {
     public void switchToRepo(ActionEvent event) throws IOException
     {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/repo.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/repo.fxml"));
         Parent root = loader.load();
 
         // Pass the prn to the RepoController
@@ -47,4 +47,5 @@ public class DashboardController {
         stage.show();
 
     }
+
 }
