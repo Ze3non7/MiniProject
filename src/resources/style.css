@@ -20,5 +20,84 @@
     -fx-border-color: #6747CD;
     -fx-border-width: 1px;
     -fx-border-style: solid;
-
 }
+
+/* Style for buttons */
+.button {
+    -fx-background-color: #6747CD; /* Button color */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-padding: 10px 20px; /* Padding */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1); /* Subtle shadow effect */
+}
+.button:hover {
+    -fx-background-color: #5B3BB2; /* Darker shade on hover */
+}
+.button:pressed {
+    -fx-background-color: #482C99; /* Even darker shade when pressed */
+}
+
+.button-underline {
+    -fx-background-color: transparent; /* Fully transparent background */
+    -fx-text-fill: #6747CD; /* Button text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-padding: 10px; /* Padding */
+    -fx-border-width: 0 0 0 0; /* Underline */
+    -fx-border-color: blue; /* Blue underline */
+    -fx-cursor: hand;
+}
+.button-underline:hover {
+    -fx-background-color: transparent; /* Keep transparent background on hover */
+    -fx-border-color: blue; /* Keep blue underline on hover */
+    -fx-cursor: hand;
+}
+
+.button-underline:pressed {
+    -fx-background-color: transparent; /* Keep transparent background when pressed */
+}
+
+.button-repo_underline {
+    -fx-background-color: transparent; /* Fully transparent background */
+    -fx-text-fill: #ffffff; /* Button text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-padding: 10px; /* Padding */
+    -fx-border-width: 0 0 0 0; /* Underline */
+    -fx-border-color: white; /* Blue underline */
+    -fx-cursor: hand;
+    -fx-text-decoration: underline;
+}
+.button-repo_underline:hover {
+    -fx-background-color: transparent; /* Keep transparent background on hover */
+    -fx-border-color: blue; /* Keep blue underline on hover */
+    -fx-cursor: hand;
+}
+
+.button-repo_underline:pressed {
+    -fx-background-color: transparent; /* Keep transparent background when pressed */
+}
+
+/* Styles for the .returner button */
+.returner {
+
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, black 0%, #630163 100%); /* Same gradient on hover */
+    -fx-text-fill: linear-gradient(from 0% 0% to 100% 0%, #9a9898, #656262); /* Keep the same gradient text fill */
+    -fx-font-family: "Century Gothic"; /* Set font family */
+    -fx-font-size: 28px; /* Set font size */
+    -fx-padding: 10px 20px; /* Padding */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-border-width: 1px; /* Optional border width */
+    -fx-border-color: black; /* Optional border color */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+}
+
+.returner:hover {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #9a9898, #656262); /* Greyish white to black gradient */
+    -fx-text-fill: linear-gradient(from 0% 0% to 100% 100%, black 0%, purple 100%); /* Linear gradient for text fill */
+}
+.root {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #084fba, #989eda); /* Subtle grey and white gradient */
+}
+

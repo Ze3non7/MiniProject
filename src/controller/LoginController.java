@@ -40,6 +40,8 @@ public class LoginController {
         stage.setScene(scene);
         stage.setTitle("Register");
         stage.show();
+
+
     }
 
     public void button_login(ActionEvent event) throws IOException
@@ -57,7 +59,16 @@ public class LoginController {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             if(resultSet.next()){
-                Parent root = FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("../view/dashboard.fxml")));
+
+                String prn = resultSet.getString("prn");
+
+                // Load the dashboard.fxml and pass the prn to the DashboardController
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/dashboard.fxml"));
+                Parent root = loader.load();
+
+                // Get the controller for the dashboard
+                DashboardController dashboardController = loader.getController();
+                dashboardController.setLoggedInPrn(prn);
 
                 Scene scene = new Scene(root);
 
