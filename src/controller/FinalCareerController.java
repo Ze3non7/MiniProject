@@ -86,7 +86,7 @@ public class FinalCareerController {
         }else if (finalHighestSubject == "PCE") {
             finalHighestSubject = "Corporate Communications";
         }else if (finalHighestSubject == "Engineering Graphics") {
-            finalHighestSubject = "Cryptography";
+            finalHighestSubject = "Mechanical Engineering";
         }else if (finalHighestSubject == "C Programming") {
             finalHighestSubject = "Software Development";
         }else if (finalHighestSubject == "Physics 2") {
@@ -152,7 +152,7 @@ public class FinalCareerController {
         }else if (finalHighestSubject == "Distributed Computing (HPC / AWN)") {
             finalHighestSubject = "Cloud Engineering";
         }else if (finalHighestSubject == "Digital Transformation (NLP / DBM)") {
-            finalHighestSubject = "Digital Transformation Consulting";
+            finalHighestSubject = "Big Data and NLP Engineer";
         }else if (finalHighestSubject == "Business Administration (PM / FM / HRM)") {
             finalHighestSubject = "Business Analysis";
         }else if (finalHighestSubject == "Sustainable Business Practices (EDM / PECSR / EM)") {
