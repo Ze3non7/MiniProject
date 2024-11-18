@@ -29,7 +29,7 @@ This project simplifies document management and career exploration, empowering s
 2. Download JavaFX SDK library and MySQL connector .jar file.
 
 ## Database Setup
-1. Change the user and password in DB_Connection file according to your settings.
+1. Change the user and password in DBConnection file according to your settings.
 2. Create A MySQL database named 'project' and then create a table named users.
 3. Columns:
 user_id varchar(10) 
