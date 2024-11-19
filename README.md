@@ -1,4 +1,4 @@
-# Unified Platform for Student Repository and Career Suggestor
+# AcadoCare: A Student's Platform
 
 ## Overview
 The Unified Platform for Student Repository and Career Suggestor is designed to address two critical challenges faced by students:  
